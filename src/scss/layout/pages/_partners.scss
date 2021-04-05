@@ -1,0 +1,15 @@
+.partners {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    transition: 0.15s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__icon {
+  }
+}

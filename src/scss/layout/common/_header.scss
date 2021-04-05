@@ -3,8 +3,12 @@
 // -----------------------------------------------------------------------------
 
 #header {
-  margin-top: 30px;
-  background-color: $black;
+  position: fixed;
+  z-index: $z-index-header;
+  top: 30px;
+  left: 0;
+
+  width: 100%;
 }
 
 .header {
@@ -19,6 +23,8 @@
 
     margin-left: auto;
     color: $text-white;
+
+    cursor: pointer;
   }
 
   &__nav {

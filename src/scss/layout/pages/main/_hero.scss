@@ -1,0 +1,87 @@
+// -----------------------------------------------------------------------------
+// Фрагмент стилизации какой-то секции
+// -----------------------------------------------------------------------------
+
+#hero {
+  background-image: url("../img/pages/main/hero/background.jpg");
+  background-position: center center;
+  background-size: cover;
+
+  .container,
+  .row,
+  .col-7 {
+    height: 100%;
+  }
+}
+
+.hero {
+  height: 100%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    margin-bottom: 95px;
+  }
+
+  &__action {
+  }
+
+  &__partners {
+    margin-top: auto;
+    margin-bottom: 25px;
+  }
+
+  &__picture {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    &::before,
+    &::after {
+      position: absolute;
+      z-index: -1;
+    }
+
+    &::before {
+      content: url("../img/pages/main/hero/border-1.svg");
+      top: 50px;
+      right: 35px;
+    }
+
+    &::after {
+      content: url("../img/pages/main/hero/border-2.svg");
+      top: 50px;
+      right: 25px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0);
+  }
+}

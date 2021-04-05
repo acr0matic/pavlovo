@@ -1,0 +1,27 @@
+.section {
+  position: relative;
+  height: 100vh;
+  padding-top: 150px;
+
+  &__title {
+    font-size: $font-title-1;
+    color: $text-white;
+
+    &--important {
+      color: $text-yellow;
+    }
+  }
+
+  &__description {
+    font-size: $font-text-1;
+    color: $text-white;
+
+    line-height: 30px;
+  }
+
+  &__link {
+    position: absolute;
+    right: 30px;
+    bottom: 65px;
+  }
+}

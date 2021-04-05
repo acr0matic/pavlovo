@@ -43,18 +43,9 @@
   .container-lg,
   .container-md,
   .container-sm,
-  .container-xl {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1320px;
+    max-width: 1200px;
   }
 }
 .row {

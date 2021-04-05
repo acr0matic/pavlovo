@@ -1,0 +1,29 @@
+.button-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  outline: none;
+  border: none;
+
+  background-color: transparent;
+
+  color: $text-white;
+  font-weight: $weight-Bold;
+
+  cursor: pointer;
+
+  &__icon {
+    position: relative;
+    right: 0;
+
+    margin-left: 20px;
+    transition: 0.15s ease;
+  }
+
+  &:hover {
+    .button-link__icon {
+      right: -10px;
+    }
+  }
+}
