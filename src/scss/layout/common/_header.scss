@@ -3,9 +3,30 @@
 // -----------------------------------------------------------------------------
 
 #header {
-
+  margin-top: 30px;
+  background-color: $black;
 }
 
 .header {
+  display: flex;
+  align-items: center;
 
+  font-weight: $weight-Bold;
+
+  &__action {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+    color: $text-white;
+  }
+
+  &__nav {
+  }
+
+  &__social {
+    display: flex;
+
+    margin-left: auto;
+  }
 }

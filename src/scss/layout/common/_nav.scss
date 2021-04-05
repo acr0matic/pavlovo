@@ -1,13 +1,22 @@
 .nav {
-  &__list {
+  &--header {
+    .nav__item {
+      margin-left: 45px;
+    }
 
+    .nav__link {
+      color: $text-white;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
   }
 
   &__item {
-
   }
 
   &__link {
-
   }
 }
