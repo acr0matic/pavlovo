@@ -113,59 +113,69 @@
 
   <!-- Основной контент -->
   <main>
-    <section id="hero" class="section">
-      <div class="container">
-        <div class="hero">
-          <div class="row">
-            <div class="col-7">
-              <div class="hero__content">
-                <h1 class="hero__title section__title page__title">
-                  Выберите, каким будет <br>
-                  <span class="section__title section__title--important">парк им. 40 лет ВЛКСМ</span>
-                </h1>
+    <div class="swiper-container" id="section-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <section id="hero" class="section">
+            <div class="container">
+              <div class="hero">
+                <div class="row">
+                  <div class="col-7">
+                    <div class="hero__content">
+                      <h1 class="hero__title section__title page__title">
+                        Выберите, каким будет <br>
+                        <span class="section__title section__title--important">парк им. 40 лет ВЛКСМ</span>
+                      </h1>
 
-                <p class="hero__description section__description">
-                  В рамках проекта мы благоустроим парк с вашей помощью.
-                  <br>
-                  Мы бы хотели, чтобы вы нам помогли. Отличный будет парк.
-                </p>
+                      <p class="hero__description section__description">
+                        В рамках проекта мы благоустроим парк с вашей помощью.
+                        <br>
+                        Мы бы хотели, чтобы вы нам помогли. Отличный будет парк.
+                      </p>
 
-                <div class="hero__action">
-                  <button class="button button-primary me-4">Оставить мнение</button>
-                  <button class="button button-outline">Cвязаться</button>
+                      <div class="hero__action">
+                        <button class="button button-primary me-4">Оставить мнение</button>
+                        <button class="button button-outline">Cвязаться</button>
+                      </div>
+                      <!-- /.hero__action -->
+
+                      <div class="hero__partners partners">
+                        <a href="" class="partners__link me-4 mb-2"><img src="img/logo-3.png" alt="" class="partners__icon"></a>
+                        <a href="" class="partners__link me-3"><img src="img/logo-2.png" alt="" class="partners__icon"></a>
+                        <a href="" class="partners__link mt-2"><img src="img/logo-thread.svg" alt="" class="partners__icon"></a>
+                      </div>
+                      <!-- /.hero__partners partners -->
+                    </div>
+                    <!-- /.hero__content -->
+                  </div>
+                  <!-- /.col-7 -->
+
+                  <div class="col-5">
+                    <div class="hero__picture">
+                      <img src="img/pages/main/hero/image.png" alt="" class="hero__image">
+                    </div>
+                    <!-- /.hero__picture -->
+                  </div>
+                  <!-- /.col-5 -->
                 </div>
-                <!-- /.hero__action -->
-
-                <div class="hero__partners partners">
-                  <a href="" class="partners__link me-4 mb-2"><img src="img/logo-3.png" alt="" class="partners__icon"></a>
-                  <a href="" class="partners__link me-3"><img src="img/logo-2.png" alt="" class="partners__icon"></a>
-                  <a href="" class="partners__link mt-2"><img src="img/logo-thread.svg" alt="" class="partners__icon"></a>
-                </div>
-                <!-- /.hero__partners partners -->
+                <!-- /.row -->
               </div>
-              <!-- /.hero__content -->
+              <!-- /.hero -->
             </div>
-            <!-- /.col-7 -->
+            <!-- /.container -->
 
-            <div class="col-5">
-              <div class="hero__picture">
-                <img src="img/pages/main/hero/image.png" alt="" class="hero__image">
-              </div>
-              <!-- /.hero__picture -->
-            </div>
-            <!-- /.col-5 -->
-          </div>
-          <!-- /.row -->
+            <button class="button-link section__link">
+              О проекте
+              <img class="button-link__icon" src="img/icons/control/arrow__link.svg" alt="">
+            </button>
+          </section>
         </div>
-        <!-- /.hero -->
+        <!-- /.swiper-slide -->
       </div>
-      <!-- /.container -->
+      <!-- /.swiper-wrapper -->
+    </div>
+    <!-- /.swiper-container -->
 
-      <button class="button-link section__link">
-        О проекте
-        <img class="button-link__icon" src="img/icons/control/arrow__link.svg" alt="">
-      </button>
-    </section>
   </main>
 
   <!-- Подвал -->
@@ -175,6 +185,7 @@
 
   <!-- Скрипты -->
   <!-- build:js -->
+  <script src="scripts/libraries/swiper.js"></script>
   <script src="scripts/script.js"></script>
   <!-- endbuild -->
 </body>
