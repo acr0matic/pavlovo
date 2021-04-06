@@ -1,0 +1,39 @@
+.input {
+  &__field {
+    width: 100%;
+
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: $input__radius;
+
+    padding: 18px 22px;
+
+    background-color: $input__bg;
+    color: #9fb3bb;
+
+    font-size: $font-text-2;
+    transition: 0.15s ease;
+
+    &--box {
+      resize: none;
+      min-height: 140px;
+    }
+
+    &--error {
+      border-color: $input--error;
+    }
+
+    &::placeholder {
+      color: #9fb3bb;
+    }
+
+    &:hover {
+      border-color: $input--hover;
+    }
+
+    &:focus {
+      border-color: transparent;
+      background-color: $input--active;
+    }
+  }
+}

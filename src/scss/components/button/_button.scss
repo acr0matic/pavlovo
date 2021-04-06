@@ -2,6 +2,9 @@
   position: relative;
   z-index: 0;
 
+  display: inline-flex;
+  align-items: center;
+
   outline: none;
   border: none;
   border-radius: 80px;
@@ -40,5 +43,10 @@
     &::after {
       opacity: 1;
     }
+  }
+
+  &:disabled {
+    opacity: 0.8;
+    pointer-events: none;
   }
 }

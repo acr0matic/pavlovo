@@ -1,0 +1,56 @@
+#survey {
+  background-color: $palette-darkblue;
+  background-image: url("../img/pages/main/survey/clouds.svg");
+  background-repeat: no-repeat;
+  background-size: 1825px;
+  background-position: center calc(50% - 200px);
+
+  .container {
+    height: 100%;
+  }
+
+  @include breakpoint($breakpoint-laptop--large) {
+    .button-link {
+      display: none;
+    }
+  }
+}
+
+.survey {
+  position: relative;
+  height: 100%;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__background {
+  }
+
+  &__form {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__image {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+
+    &--1 {
+      left: -300px;
+
+      @include breakpoint($breakpoint-laptop--large) {
+        left: -200px;
+      }
+    }
+
+    &--2 {
+      right: -50px;
+
+      @include breakpoint($breakpoint-laptop--large) {
+        right: 50px;
+      }
+    }
+  }
+}

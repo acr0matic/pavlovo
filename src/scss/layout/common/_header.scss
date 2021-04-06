@@ -17,17 +17,8 @@
 
   font-weight: $weight-Bold;
 
-  &__action {
-    display: flex;
-    align-items: center;
-
-    margin-left: auto;
-    color: $text-white;
-
-    cursor: pointer;
-  }
-
   &__nav {
+    margin-left: auto;
   }
 
   &__social {
