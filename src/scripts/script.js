@@ -1,4 +1,4 @@
-/* global Swiper */
+/* global Swiper, MicroModal */
 
 const headerMenu = document.querySelectorAll('#header .nav__item, .header__action');
 const sectionSlider = new Swiper('#section-slider', {
@@ -23,3 +23,23 @@ function SetAnchors(menu) {
 }
 
 SetAnchors(headerMenu);
+
+MicroModal.init({
+  awaitCloseAnimation: true,
+  disableFocus: true,
+});
+
+const modalTitle = document.querySelector('#modal-info .modal__title');
+const modalText = document.querySelector('#modal-info .modal__description');
+const projectCards = document.querySelectorAll('#about .about__item');
+
+projectCards.forEach((card) => {
+  const title = card.querySelector('.about__stage').innerHTML;
+  const text = card.querySelector('.about__description').innerHTML;
+  const button = card.querySelector('.about__action');
+
+  button.addEventListener('click', () => {
+    modalTitle.innerHTML = title;
+    modalText.innerHTML = text;
+  });
+});
