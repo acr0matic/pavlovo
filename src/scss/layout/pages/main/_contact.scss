@@ -1,0 +1,56 @@
+#contact {
+
+  .container,
+  .contact {
+    height: 100%;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  &__partners {
+    margin-top: auto;
+    margin-left: auto;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon {
+    margin-right: 15px;
+
+    path {
+      transition: 0.15s ease;
+    }
+  }
+
+  &__link {
+    color: $text-white;
+    font-weight: $weight-Medium;
+    font-size: $font-text-1;
+
+    transition: 0.15s ease;
+
+    &:hover {
+      @media (hover: hover) {
+        color: $text-yellow;
+
+        .contact__icon path {
+          fill: $text-yellow;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+}
