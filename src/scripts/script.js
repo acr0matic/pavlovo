@@ -31,6 +31,7 @@ SetAnchors(headerMenu);
 MicroModal.init({
   awaitCloseAnimation: true,
   disableFocus: true,
+  disableScroll: true,
 });
 
 const modalTitle = document.querySelector('#modal-info .modal__title');
