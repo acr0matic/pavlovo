@@ -7,6 +7,10 @@
   background-position: center center;
   background-size: cover;
 
+  @include breakpoint($breakpoint-tablet--large) {
+    padding-top: 130px;
+  }
+
   .container,
   .row,
   .col-7 {
@@ -33,6 +37,16 @@
   }
 
   &__action {
+    @include breakpoint($breakpoint-tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .button {
+        width: 100%;
+        max-width: 360px;
+      }
+    }
   }
 
   &__partners {
@@ -49,6 +63,10 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      display: none;
+    }
 
     &::before,
     &::after {

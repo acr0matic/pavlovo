@@ -14,6 +14,15 @@
     font-size: $font-text-2;
     transition: 0.15s ease;
 
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $font-text-2 - 2;
+      line-height: 22px;
+    }
+
+    @include breakpoint($breakpoint-mobile) {
+      font-size: $font-text-2 - 4;
+    }
+
     &--box {
       resize: none;
       min-height: 140px;

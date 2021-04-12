@@ -13,6 +13,10 @@
 
   cursor: pointer;
 
+  @include breakpoint($breakpoint-tablet) {
+    display: none;
+  }
+
   &__icon {
     position: relative;
     right: 0;

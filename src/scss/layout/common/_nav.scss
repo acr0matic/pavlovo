@@ -45,6 +45,12 @@
         background-color: #e9c46b;
       }
     }
+
+    &--inverted {
+      path {
+        fill: #ffffff;
+      }
+    }
   }
 
   &__icon {

@@ -1,5 +1,4 @@
 #contact {
-
   .container,
   .contact {
     height: 100%;
@@ -22,6 +21,10 @@
   &__links {
     display: flex;
     flex-direction: column;
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      display: none;
+    }
   }
 
   &__icon {

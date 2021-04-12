@@ -103,6 +103,15 @@
           </a>
         </div>
         <!-- /.header__social -->
+
+        <div class="header__mobile">
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <!-- /.header__mobile -->
       </div>
       <!-- /.header -->
     </div>
@@ -118,7 +127,7 @@
             <div class="container">
               <div class="hero">
                 <div class="row">
-                  <div class="col-7">
+                  <div class="col-12 col-xl-7">
                     <div class="hero__content">
                       <h1 class="hero__title section__title page__title">
                         Выберите, каким будет <br>
@@ -132,7 +141,7 @@
                       </p>
 
                       <div class="hero__action">
-                        <button class="button button-primary me-4">Оставить мнение</button>
+                        <button class="button button-primary me-0 me-md-4 mb-3 mb-lg-0">Оставить мнение</button>
                         <button class="button button-outline">Cвязаться</button>
                       </div>
                       <!-- /.hero__action -->
@@ -180,10 +189,10 @@
                 </h2>
 
                 <div class="row justify-content-center">
-                  <div class="col-6">
+                  <div class="col-md-8 col-lg-7 col-xl-6">
                     <form action="" class="survey__form form">
                       <div class="row mb-4">
-                        <div class="col-8 mb-4">
+                        <div class="col-12 col-lg-8 mb-4">
                           <div class="input">
                             <input type="text" class="form__field input__field" placeholder="Ваше имя">
                           </div>
@@ -191,7 +200,7 @@
                         </div>
                         <!-- /.col-8 -->
 
-                        <div class="col-4 mb-4">
+                        <div class="col-12 col-lg-4 mb-4">
                           <div class="input">
                             <input type="text" class="form__field input__field input__field--error" placeholder="Возраст">
                           </div>
@@ -238,13 +247,13 @@
         <div class="swiper-slide">
           <section id="about" class="section">
             <div class="container">
-              <h2 class="survey__title section__title text-center">
+              <h2 class="section__title text-center">
                 Проект реализуется в <span class="section__title section__title--important">3 этапа</span>
               </h2>
 
               <div class="about">
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <div class="about__item">
                       <div class="about__stage">
                         1 этап
@@ -282,7 +291,7 @@
                   </div>
                   <!-- /.col-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <div class="about__item">
                       <div class="about__stage">
                         2 этап
@@ -320,7 +329,7 @@
                   </div>
                   <!-- /.col-4 -->
 
-                  <div class="col-4">
+                  <div class="col-12 col-lg-4">
                     <div class="about__item">
                       <div class="about__stage">
                         3 этап
@@ -373,15 +382,40 @@
         <!-- /.swiper-slide -->
 
         <div class="swiper-slide">
+          <section id="map">
+            <div class="map">
+              <img class="map__image" src="img/pages/main/map/map.jpg" alt="">
+
+              <div class="map__points">
+                <div class="map__point map__point--scene">
+                  <img src="img/icons/misc/dot.svg" alt="">
+                </div>
+
+                <div class="map__point map__point--treadmills">
+                  <img src="img/icons/misc/dot.svg" alt="">
+                </div>
+
+                <div class="map__point map__point--pavilion">
+                  <img src="img/icons/misc/dot.svg" alt="">
+                </div>
+              </div>
+              <!-- /.map__points -->
+            </div>
+            <!-- /.map -->
+          </section>
+        </div>
+        <!-- /.swiper-slide -->
+
+        <div class="swiper-slide">
           <section id="contact" class="section">
             <div class="container">
               <div class="contact">
-                <h2 class="contact__title section__title">
+                <h2 class="contact__title section__title text-center text-lg-start">
                   Свяжитесь с нами
                 </h2>
 
-                <div class="row">
-                  <div class="col-5">
+                <div class="row justify-content-center justify-content-lg-start">
+                  <div class="col-12 col-md-10 col-lg-6 col-xl-5">
                     <form action="" class="survey__form form">
                       <div class="input mb-4">
                         <input type="text" class="form__field input__field" placeholder="Ваше имя">
@@ -397,7 +431,7 @@
                   </div>
                   <!-- /.col-5 -->
 
-                  <div class="col-5 offset-2">
+                  <div class="col-5 offset-1 offset-xl-2">
                     <div class="contact__links">
                       <a href="mailto:info@pavlovopark.ru" class="contact__link">
                         <svg class="contact__icon" width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">

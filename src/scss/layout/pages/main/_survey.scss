@@ -4,6 +4,20 @@
   background-size: 1825px;
   background-position: center calc(50% - 200px);
 
+  @include breakpoint($breakpoint-tablet--large) {
+    background-size: 1000px;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    background-image: url("../img/pages/main/survey/clouds__v2.svg");
+    background-position: center calc(50% - 250px);
+    background-size: 320px;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    padding-bottom: 120px;
+  }
+
   .container {
     height: 100%;
   }
@@ -21,6 +35,10 @@
 
   &__title {
     margin-bottom: 50px;
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 200px;
+    }
   }
 
   &__background {
@@ -36,11 +54,26 @@
     z-index: 0;
     bottom: 0;
 
+    @include breakpoint($breakpoint-tablet) {
+      bottom: initial;
+    }
+
     &--1 {
       left: -300px;
 
       @include breakpoint($breakpoint-laptop--large) {
         left: -200px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        left: -250px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        top: 135px;
+        left: 0;
+
+        width: 150px;
       }
     }
 
@@ -49,6 +82,21 @@
 
       @include breakpoint($breakpoint-laptop--large) {
         right: 50px;
+      }
+
+      @include breakpoint($breakpoint-laptop--medium) {
+        right: 0;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        right: -80px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        top: 130px;
+        right: calc(50% - 100px);
+
+        width: 60px;
       }
     }
   }

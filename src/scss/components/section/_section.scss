@@ -5,9 +5,31 @@
   overflow: hidden;
   padding-top: 150px;
 
+  @include breakpoint($breakpoint-tablet--large) {
+    height: initial;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
   &__title {
     font-size: $font-title-1;
     color: $text-white;
+
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-title-2;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-title-3;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-title-5 + 4;
+    }
+
+    @include breakpoint($breakpoint-mobile) {
+      font-size: $font-title-5;
+    }
 
     &--important {
       color: $text-yellow;
@@ -19,6 +41,15 @@
     color: $text-white;
 
     line-height: 30px;
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-text-2 - 2;
+      line-height: 22px;
+    }
+
+    @include breakpoint($breakpoint-mobile) {
+      font-size: $font-text-2 - 4;
+    }
   }
 
   &__link {

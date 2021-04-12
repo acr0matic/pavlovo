@@ -12,6 +12,8 @@
 }
 
 .header {
+  position: relative;
+
   display: flex;
   align-items: center;
 
@@ -19,11 +21,31 @@
 
   &__nav {
     margin-left: auto;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
+    }
   }
 
   &__social {
     display: flex;
 
     margin-left: auto;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-right: auto;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+
+      display: block;
+    }
   }
 }

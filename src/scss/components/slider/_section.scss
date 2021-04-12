@@ -1,0 +1,12 @@
+#section-slider {
+  @include breakpoint($breakpoint-tablet--large) {
+    overflow: visible;
+  }
+
+  .swiper-wrapper {
+    @include breakpoint($breakpoint-tablet--large) {
+      box-sizing: border-box;
+      flex-direction: column;
+    }
+  }
+}

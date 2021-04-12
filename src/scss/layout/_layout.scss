@@ -7,10 +7,12 @@
 @import "common/nav";
 @import "common/footer";
 
+@import "pages/partners";
+
 // Фрагметы главной страницы
 @import "pages/main/hero";
 @import "pages/main/survey";
 @import "pages/main/about";
 @import "pages/main/contact";
+@import "pages/main/map";
 
-@import "pages/partners";
