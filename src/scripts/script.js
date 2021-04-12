@@ -39,7 +39,7 @@ const projectCards = document.querySelectorAll('#about .about__item');
 
 projectCards.forEach((card) => {
   const title = card.querySelector('.about__stage').innerHTML;
-  const text = card.querySelector('.about__description').innerHTML;
+  const text = card.querySelector('.about__content').innerHTML;
   const button = card.querySelector('.about__action');
 
   button.addEventListener('click', () => {

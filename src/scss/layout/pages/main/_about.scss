@@ -75,6 +75,10 @@
     line-height: 20px;
   }
 
+  &__content {
+    display: none;
+  }
+
   &__action {
     display: inline-flex;
     align-items: center;
