@@ -43,6 +43,8 @@
     &:focus {
       border-color: transparent;
       background-color: $input--active;
+
+      color: $text-black;
     }
   }
 }

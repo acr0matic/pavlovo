@@ -9,6 +9,10 @@
   left: 0;
 
   width: 100%;
+
+  @include breakpoint($breakpoint-tablet) {
+    position: absolute;
+  }
 }
 
 .header {
@@ -40,8 +44,15 @@
   &__mobile {
     display: none;
 
+    &--fixed {
+      position: fixed !important;
+      top: 15px !important;
+      right: -2px !important;
+    }
+
     @include breakpoint($breakpoint-tablet--large) {
       position: absolute;
+      z-index: 2;
       top: -15px;
       right: -15px;
 

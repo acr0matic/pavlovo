@@ -11,6 +11,10 @@
     padding-top: 130px;
   }
 
+  @include breakpoint($breakpoint-mobile--large) {
+    background-image: url("../img/pages/main/hero/background__v2.jpg");
+  }
+
   .container,
   .row,
   .col-7 {
