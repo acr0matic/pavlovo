@@ -55,30 +55,30 @@ projectCards.forEach((card) => {
   });
 });
 
-const map = document.getElementById('map');
-const mapImage = map.querySelector('.map__image');
-const points = map.querySelectorAll('#map .map__point');
+// const map = document.getElementById('map');
+// const mapImage = map.querySelector('.map__image');
+// const points = map.querySelectorAll('#map .map__point');
 
-function hideAll() {
-  points.forEach((point) => {
-    point.classList.add('map__point--hide');
-  });
-}
+// function hideAll() {
+//   points.forEach((point) => {
+//     point.classList.add('map__point--hide');
+//   });
+// }
 
-points.forEach((point) => {
-  point.addEventListener('click', () => {
-    const width = 0;
-    const height = 0;
+// points.forEach((point) => {
+//   point.addEventListener('click', () => {
+//     const width = 0;
+//     const height = 0;
 
-    const x = point.offsetLeft - width;
-    const y = point.offsetTop - height;
+//     const x = point.offsetLeft - width;
+//     const y = point.offsetTop - height;
 
-    mapImage.style.transformOrigin = `${x}px ${y}px`;
-    mapImage.style.transform = 'scale(4)';
+//     mapImage.style.transformOrigin = `${x}px ${y}px`;
+//     mapImage.style.transform = 'scale(4)';
 
-    hideAll();
-  });
-});
+//     hideAll();
+//   });
+// });
 
 const buttonSurvey = document.querySelector('.hero__action .button-primary');
 const buttonContact = document.querySelector('.hero__action .button-outline');

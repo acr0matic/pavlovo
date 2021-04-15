@@ -3,8 +3,9 @@
   background-repeat: no-repeat;
   background-position: center bottom;
 
-  @include breakpoint($breakpoint-tablet) {
+  @include breakpoint($breakpoint-tablet--large) {
     padding-bottom: 120px;
+    margin-bottom: 120px;
   }
 
   .section__title {

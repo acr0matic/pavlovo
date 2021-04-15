@@ -2,62 +2,49 @@
 }
 
 .map {
-  background-color: $text-yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   width: 100%;
   height: 100vh;
+  min-height: 750px;
 
-  display: none;
+  @include breakpoint($breakpoint-tablet--large) {
+    flex-direction: column-reverse;
+    height: initial;
+    min-height: initial;
 
-  &__image {
+    padding-bottom: 120px;
+  }
+
+  &__content {
+    width: 820px;
+    height: 461px;
+
+    margin: 0 auto 30px auto;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 80%;
+
+      margin: 30px auto 0 auto;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      height: 340px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 90%;
+      height: 240px;
+    }
+  }
+
+  &__video {
     position: relative;
 
     width: 100%;
     height: 100%;
-
-    object-fit: cover;
-
-    transition: transform 0.3s ease;
-  }
-
-  &__points {
-    width: 100%;
-    height: 100%;
-  }
-
-  &__point {
-    position: absolute;
-    cursor: pointer;
-
-    opacity: 1;
-    visibility: visible;
-
-    transition: 0.15s ease;
-
-    &--hide {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    &:hover {
-      @media (hover: hover) {
-        opacity: 0.8;
-      }
-    }
-
-    &--scene {
-      top: calc(50% - 170px);
-      left: calc(50% - 400px);
-    }
-
-    &--treadmills {
-      top: calc(50% - 100px);
-      left: calc(50% + 270px);
-    }
-
-    &--pavilion {
-      bottom: calc(50% - 300px);
-      left: calc(50% - 770px);
-    }
   }
 }
