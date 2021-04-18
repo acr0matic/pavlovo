@@ -24,6 +24,16 @@
     font-size: $font-text-2 - 4;
   }
 
+  &__loader {
+    display: none;
+  }
+
+  &--send {
+    .button__loader {
+      display: block;
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;
