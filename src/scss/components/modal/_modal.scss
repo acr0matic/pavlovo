@@ -1,3 +1,42 @@
+.modal {
+  &--mini {
+    .modal__container {
+      width: 540px;
+      height: initial;
+
+      @include breakpoint($breakpoint-tablet) {
+        width: 90%;
+        height: initial;
+      }
+    }
+
+    .modal__wrapper {
+      width: 100%;
+      text-align: center;
+
+      padding: 64px 48px;
+
+      @include breakpoint($breakpoint-tablet) {
+        padding: 48px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        padding: 64px 20px;
+      }
+    }
+
+    .modal__title {
+      margin-bottom: 0;
+    }
+
+    .modal__close {
+      @include breakpoint($breakpoint-tablet) {
+        top: 24px;
+      }
+    }
+  }
+}
+
 .modal__overlay {
   position: fixed;
   z-index: $z-index-modal;

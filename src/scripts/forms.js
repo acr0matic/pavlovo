@@ -35,6 +35,12 @@ forms.forEach(form => {
         const result = await response.json();
         console.log(result);
 
+        MicroModal.show('modal-accept', {
+          awaitCloseAnimation: true,
+          disableFocus: true,
+          disableScroll: true,
+        });
+
         button.classList.remove('button--send');
         button.querySelector('.button__text').innerHTML = 'Отправить';
 
