@@ -1,9 +1,14 @@
 .section {
   position: relative;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 100px);
 
   overflow: hidden;
-  padding-top: 150px;
+  padding-top: 100px;
+
+  @media screen and (min-height: 680px) {
+    height: calc(100vh - 150px);
+    padding-top: 150px;
+  }
 
   @include breakpoint($breakpoint-tablet--large) {
     height: initial;
@@ -55,6 +60,10 @@
   &__link {
     position: absolute;
     right: 30px;
-    bottom: 65px;
+    bottom: 15px;
+
+    @media screen and (min-height: 680px) {
+      bottom: 65px;
+    }
   }
 }

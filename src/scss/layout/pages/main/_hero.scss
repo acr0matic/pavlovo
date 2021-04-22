@@ -37,7 +37,13 @@
   }
 
   &__description {
-    margin-bottom: 95px;
+    margin-bottom: 35px;
+
+    @include breakpoint($breakpoint-tablet) {
+      br {
+        display: none;
+      }
+    }
   }
 
   &__action {
@@ -61,7 +67,7 @@
   &__picture {
     position: relative;
     z-index: 1;
-    width: 100%;
+    width: 425px;
 
     animation-name: floating;
     animation-duration: 3s;
@@ -80,14 +86,14 @@
 
     &::before {
       content: url("../img/pages/main/hero/border-1.svg");
-      top: 50px;
-      right: 35px;
+      top: 35px;
+      right: 25px;
     }
 
     &::after {
       content: url("../img/pages/main/hero/border-2.svg");
-      top: 50px;
-      right: 25px;
+      top: 40px;
+      right: 15px;
     }
   }
 
