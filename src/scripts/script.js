@@ -62,6 +62,7 @@ function MapSlider() {
       centeredSlides: true,
       initialSlide: 1,
       spaceBetween: 15,
+      loop: true,
 
       effect: "coverflow",
       coverflowEffect: {
@@ -81,8 +82,8 @@ function MapSlider() {
 
   else {
     const swiper = new Swiper(".map-slider", {
+      loop: true,
       slidesPerView: 'auto',
-      initialSlide: 0,
       spaceBetween: 15,
     });
   }
