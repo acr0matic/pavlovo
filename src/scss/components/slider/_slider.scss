@@ -1,0 +1,35 @@
+.swiper {
+  &-button {
+    &-prev,
+    &-next {
+      outline: none;
+      transition: all 0.15s ease;
+
+      @include breakpoint($breakpoint-tablet--large) {
+        display: none;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+
+    &-prev {
+      left: 60px;
+
+      &::after {
+        content: url("../img/icons/control/map__left.svg");
+      }
+    }
+
+    &-next {
+      right: 60px;
+
+      &::after {
+        content: url("../img/icons/control/map__right.svg");
+      }
+    }
+  }
+}

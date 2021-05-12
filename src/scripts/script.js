@@ -55,30 +55,38 @@ projectCards.forEach((card) => {
   });
 });
 
-// const map = document.getElementById('map');
-// const mapImage = map.querySelector('.map__image');
-// const points = map.querySelectorAll('#map .map__point');
+function MapSlider() {
+  if (window.matchMedia('(min-width: 991px)').matches) {
+    const swiper = new Swiper(".map-slider", {
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      initialSlide: 1,
+      spaceBetween: 15,
 
-// function hideAll() {
-//   points.forEach((point) => {
-//     point.classList.add('map__point--hide');
-//   });
-// }
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 850,
+        modifier: 1,
+        slideShadows: true
+      },
 
-// points.forEach((point) => {
-//   point.addEventListener('click', () => {
-//     const width = 0;
-//     const height = 0;
+      navigation: {
+        nextEl: '.map-button-next',
+        prevEl: '.map-button-prev',
+      },
+    });
+  }
 
-//     const x = point.offsetLeft - width;
-//     const y = point.offsetTop - height;
-
-//     mapImage.style.transformOrigin = `${x}px ${y}px`;
-//     mapImage.style.transform = 'scale(4)';
-
-//     hideAll();
-//   });
-// });
+  else {
+    const swiper = new Swiper(".map-slider", {
+      slidesPerView: 'auto',
+      initialSlide: 0,
+      spaceBetween: 15,
+    });
+  }
+}
 
 const buttonSurvey = document.querySelector('.hero__action .button-primary');
 const buttonContact = document.querySelector('.hero__action .button-outline');
@@ -130,9 +138,4 @@ mobileNav.forEach((item) => {
   });
 });
 
-// sideOverlay.addEventListener('click', (e) => {
-//   if (e.target !== sideMenuWrapper && !sideMenuWrapper.contains(e.target)) {
-//     sideMenu.classList.remove('side-menu--open');
-//     sideMenuButton.classList.remove('is-active');
-//   }
-// });
+MapSlider();

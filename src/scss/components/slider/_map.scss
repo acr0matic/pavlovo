@@ -1,0 +1,24 @@
+.map-slider {
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 512px;
+    height: 405px;
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 90%;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      height: 360px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      height: 280px;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      height: 230px;
+    }
+  }
+}

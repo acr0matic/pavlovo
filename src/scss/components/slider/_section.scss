@@ -3,7 +3,7 @@
     overflow: visible;
   }
 
-  .swiper-wrapper {
+  > .swiper-wrapper {
     @include breakpoint($breakpoint-tablet--large) {
       box-sizing: border-box;
       flex-direction: column;
